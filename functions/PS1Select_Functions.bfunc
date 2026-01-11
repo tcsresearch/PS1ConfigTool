@@ -1,7 +1,7 @@
 
 
 ## Define functions for CASE used in PS1ConfigTool-CaseSelect.bfunc. 
-
+## TODO: Make this dynamic based on the contents of the profile folder.
 
 
 function PS1Select_Default() {
