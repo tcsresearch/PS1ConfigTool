@@ -1,5 +1,6 @@
 
 ## Define Case Statement Options ###
+## TODO: Make this dynamic based on the contents of the profile folder.
 
 function DefineCaseOptions() {
 case $1 in 
