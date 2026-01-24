@@ -1,4 +1,9 @@
 function PS1Select_Default() {
+        # Specify Profile Details
+        PS1_ProfileName="Basic"
+        PS1_ProfileVersion="0.1"
+        #
+        # Change PS1 Prompt
         PS1="[\h]$ "
         echo "BASH Prompt Selected: Default "
 }
