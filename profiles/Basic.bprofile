@@ -2,6 +2,7 @@ function PS1Select_Basic() {
         # Specify Profile Details
         PS1_ProfileName="Basic"
         PS1_ProfileVersion="0.1"
+        #
         # Change PS1 Prompt
         PS1="$(whoami)@$(hostname):$(pwd)$ "
         echo "BASH Prompt Selected: Basic "
