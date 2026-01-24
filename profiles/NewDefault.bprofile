@@ -1,4 +1,9 @@
 function PS1Select_NewDefault() {
+        # Specify Profile Details
+        PS1_ProfileName="Basic"
+        PS1_ProfileVersion="0.1"
+        #
+        # Change PS1 Prompt
         PS1="\n\[\033[1;31m\]\u@\h: \[\033[1;34m\] -> \[\033[0;32m\] "
         echo "BASH Profile Selected: NewDefault "
 }
