@@ -1,4 +1,5 @@
 #!/bin/env bash
+# shellcheck source=/dev/null
 
 ## The following line is a default parameter; disabled for replacement with a custom implementation.
 ### export PS1='[\h]$ '
