@@ -74,6 +74,7 @@ DisplayBanner
 PS1ConfigTool_FunctionsFile="PS1ConfigTool.bfunc"
 if [ -f $PS1ConfigTool_FunctionsFile ]; then
 	echo "Sourcing Functions..."
+	# shellcheck source=/dev/null
 	source $PS1ConfigTool_FunctionsFile
 	echo "Functions Loaded."
 fi
