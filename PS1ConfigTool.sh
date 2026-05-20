@@ -33,9 +33,9 @@ PS1ProgVersion="0.1.3"
 
 ConfigFile="/etc/bash.profile.d/PS1ConfigTool/config/PS1ConfigTool.conf"
 # ConfigFile="$(pwd)/config/PS1ConfigTool.conf"
-if [ -f $ConfigFile ]; then
+if [ -f "$ConfigFile" ]; then
    echo "Sourcing Config File: $ConfigFile"	
-   source $ConfigFile
+   source "$ConfigFile"
 fi
 
 
@@ -45,7 +45,7 @@ fi
 
 LoaderFile="/etc/bash.profile.d/PS1ConfigTool/functions/SourceFolderLoader.bfunc"
 # LoaderFile="$(pwd)/functions/SourceFolderLoader.bfunc"
-if [ -f $LoaderFile ]; then
+if [ -f "$LoaderFile" ]; then
    echo "Sourcing Config File: $LoaderFile"     
 ##   source $LoaderFile
 fi
@@ -60,7 +60,7 @@ FunctionsFolderLoader
 # Source Profiles #
 ####################
 
-if [ -d $ProfileDir ]; then
+if [ -d "$ProfileDir" ]; then
    echo "Sourcing Profiles:"     
    # Call SourceFolderLoader
 #  SourceFolderLoader $ProfileDir
