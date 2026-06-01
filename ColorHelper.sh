@@ -95,7 +95,8 @@ function colornames() {
                 for bg in "${colors[@]}"
                 do
                         # echo -en "\$$bg\t"
-                        printf ' $BG_%-14s' ${bgbright:1}$bg;
+###                        printf ' $BG_%-14s' ${bgbright:1}$bg;
+                        printf ' $BG_%-14s' "${bgbright:1}""$bg";
                 done
 
                 # line feed:
