@@ -1,5 +1,6 @@
 #!/bin/env bash
 # shellcheck source=/dev/null
+# shellcheck disable=SC2034  # Unused variables left for readability
 
 ## The following line is a default parameter; disabled for replacement with a custom implementation.
 ### export PS1='[\h]$ '
