@@ -70,8 +70,8 @@ function printcolor() {
         local FG=$1
         local BG=$2
 
-        fg=$(eval echo "\$\{$FG\}")
-        bg=$(eval echo "\$\{BG_$BG\}")
+        fg="$(eval echo "\$\{$FG\}")"
+        bg="$(eval echo "\$\{BG_$BG\}")"
         eval echo -en "$fg$bg"
 
         printf ' $%-17s' $FG;
@@ -92,7 +92,7 @@ function colornames() {
         do
                 #echo "writing ${bgbright:1} bg colors"
                 #column header
-                for bg in ${colors[@]}
+                for bg in "${colors[@]}"
                 do
                         # echo -en "\$$bg\t"
                         printf ' $BG_%-14s' ${bgbright:1}$bg;
@@ -101,18 +101,18 @@ function colornames() {
                 # line feed:
                 echo ""
 
-                for fgbright in ${lowup[@]}
+                for fgbright in "${lowup[@]}"
                 do
 
                         #echo "writing ${fgbright:1} fg colors"
-                        for fg in ${colors[@]}
+                        for fg in "${colors[@]}"
                         do
-                                fgcolor=${fgbright:1}$fg
+                                fgcolor="${fgbright:1}$fg"
 
-                                for bg in ${colors[@]}
+                                for bg in "${colors[@]}"
                                 do
                                         bgcolor=${bgbright:1}$bg
-                                        printcolor $fgcolor $bgcolor
+                                        printcolor "$fgcolor" "$bgcolor"
                                 done
 
                                 # line feed:
