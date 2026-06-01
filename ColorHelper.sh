@@ -5,7 +5,6 @@
 
 # This script can be used to further develop Cecho.
 
-#!/bin/bash
 
 # Adds some color helpers.
 # 8-bit 256-color lookup table
@@ -88,7 +87,7 @@ function colornames() {
         local fgcolor bgcolor
         echo "List of color variables. "
         #table
-        for bgbright in ${lowup[@]}
+        for bgbright in "${lowup[@]}"
         do
                 #echo "writing ${bgbright:1} bg colors"
                 #column header
@@ -139,11 +138,11 @@ function colorhelp() {
 function colorgrid() {
         iter=16
         while [ $iter -lt 52 ]; do
-                second=$[$iter+36]
-                third=$[$second+36]
-                four=$[$third+36]
-                five=$[$four+36]
-                six=$[$five+36]
+                second=$(($iter+36))
+                third=$(($second+36))
+                four=$(($third+36))
+                five=$(($four+36]))
+                six=$(($five+36))
                 seven=$[$six+36]
                 if [ $seven -gt 250 ];then seven=$[$seven-251]; fi
 
