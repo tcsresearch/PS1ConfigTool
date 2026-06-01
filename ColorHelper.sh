@@ -162,7 +162,7 @@ function colorgrid() {
                 printf "%03d" $seven
 
 
-                iter=$(([$iter+1))
+                iter=$[$iter+1]
                 printf '\r\n'
         done
         echo -e "$COL_RESET"
