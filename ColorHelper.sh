@@ -70,8 +70,8 @@ function printcolor() {
         local FG=$1
         local BG=$2
 
-        fg=`eval echo "\$\{$FG\}"`
-        bg=`eval echo "\$\{BG_$BG\}"`
+        fg=$(eval echo "\$\{$FG\}")
+        bg=$(eval echo "\$\{BG_$BG\}")
         eval echo -en "$fg$bg"
 
         printf ' $%-17s' $FG;
