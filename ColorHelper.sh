@@ -141,9 +141,9 @@ function colorgrid() {
                 second=$(($iter+36))
                 third=$(($second+36))
                 four=$(($third+36))
-                five=$(($four+36]))
+                five=$(($four+36))
                 six=$(($five+36))
-                seven=$[$six+36]
+                seven=$(($six+36))
                 if [ $seven -gt 250 ];then seven=$[$seven-251]; fi
 
                 echo -en "\033[38;5;$(echo $iter)m█ "
