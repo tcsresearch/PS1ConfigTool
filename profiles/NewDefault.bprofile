@@ -1,6 +1,6 @@
 function PS1Select_NewDefault() {
         # Specify Profile Details
-        PS1_ProfileName="Basic"
+        PS1_ProfileName="NewDefault"
         PS1_ProfileVersion="0.1"
         #
         # Change PS1 Prompt
