@@ -1,6 +1,6 @@
 function PS1Select_MoreInfo() {
         # Specify Profile Details
-        PS1_ProfileName="Basic"
+        PS1_ProfileName="MoreInfo"
         PS1_ProfileVersion="0.1"
         #
         # Change PS1 Prompt
