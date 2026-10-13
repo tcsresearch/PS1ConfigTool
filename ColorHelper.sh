@@ -73,7 +73,7 @@ function printcolor() {
         bg="$(eval echo "\$\{BG_$BG\}")"
         eval echo -en "$fg$bg"
 
-        printf ' $%-17s' $FG;
+        printf ' $%-17s' "$FG";
         echo -en "${COL_RESET}"
 }
 
