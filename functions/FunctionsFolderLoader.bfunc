@@ -20,7 +20,7 @@ function FunctionsFolderLoader() {
 	for file in "$SOURCE_DIR"/*; do
 	  # Check if the file is a regular file and not a directory
 	  if [ -f "$file" ]; then
-	    echo "Sourcing File: $file
+	    echo "Sourcing File: $file"
 	    # Source the file
 	    source "$file"
 	    echo "File Sourced: $file"
