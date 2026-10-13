@@ -26,5 +26,5 @@ function FunctionsFolderLoader() {
 	    echo "File Sourced: $file"
 	  fi
 	done
-}
+
 
