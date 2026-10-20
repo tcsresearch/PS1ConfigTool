@@ -1,3 +1,5 @@
+<img src="https://github.com/tcsresearch/PS1ConfigTool/blob/main/PS1ConfigTool_Logo.jpg">
+
 # PS1ConfigTool
 
 
